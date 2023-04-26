@@ -50,5 +50,14 @@ namespace CalculatorTests
             Res = Calc.Multiply(Num1, Num2);
             Assert.IsTrue(Res == (Num1 * Num2));
         }
+        [Test]
+        public void Exponentiation()
+        {
+            int num1 = 2;
+            int num2 = -4;
+            double res = Calc.Exponentiation(num1, num2);
+            Assert.IsTrue(res == (Math.Pow(num1,num2)));
+
+        }
     }
 }
